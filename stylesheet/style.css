@@ -100,6 +100,10 @@ body{
     opacity: 0.9;
     animation: mobileMenuAni;   
     animation-duration: 0.3s;
+    -webkit-animation: mobileMenuAni;   
+    -webkit-animation-duration: 0.3s;
+    -moz-animation: mobileMenuAni;  
+    -moz-animation-duration: 0.3s;
 }
 
 .mobile-menu-content  ul{
@@ -367,6 +371,14 @@ body{
     }
 }
 @keyframes  mobileMenuAni{
+    from{right:-100px;opacity: 0;}
+    to{right:0;opacity: 0.9;}
+}
+@-webkit-keyframes  mobileMenuAni{
+    from{right:-100px;opacity: 0;}
+    to{right:0;opacity: 0.9;}
+}
+@-moz-keyframes  mobileMenuAni{
     from{right:-100px;opacity: 0;}
     to{right:0;opacity: 0.9;}
 }
