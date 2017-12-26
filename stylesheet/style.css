@@ -100,7 +100,7 @@ body{
 .mobile-menu-content{
     display: none;
     position: absolute;
-    top: 100%;
+    top: 78px;
     right: 0;
     width: 100%;
     margin-top: 1px; 
@@ -367,9 +367,9 @@ body{
         width: 240px;
         height: 240px;
     }
-    .card-container,
-    .home-card-body .outer-wrapper #address .col-1,
-    .home-card-body .outer-wrapper #address .col-2{
+    .card-container { width: 95%;}
+    #address .col-1,
+    #address .col-2{
         width: 100%;   
     }
 }
@@ -653,7 +653,7 @@ body{
      content: "";
      display: table;
  }
-.card-container .card-header::after {
+.card-container .card-header::after,.blog-container::after {
     content: "";
     display: table; 
 }
