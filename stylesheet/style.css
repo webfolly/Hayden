@@ -105,12 +105,12 @@ body{
     width: 100%;
     margin-top: 1px; 
     opacity: 0.9;
-    animation: mobileMenuAni;   
-    animation-duration: 0.3s;
     -webkit-animation: mobileMenuAni;   
     -webkit-animation-duration: 0.3s;
     -moz-animation: mobileMenuAni;  
     -moz-animation-duration: 0.3s;
+    animation: mobileMenuAni;   
+    animation-duration: 0.3s;
 }
 .mobile-menu-content  ul{
     list-style-type: none;
