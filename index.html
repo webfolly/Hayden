@@ -11,7 +11,7 @@
         </title>
     </head>
     <body>
-      <div id="navtop" class="header">
+        <div id="navtop" class="header">
             <div class="header-content">
                 <div class="title">
                     Hayden <span class="set-color">Zhang</span>
@@ -20,76 +20,301 @@
                         <i id="mobile-menu-icon" class="fa fa-bars"></i>
                         <div id="mobile-menu-content" class="mobile-menu-content">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="resume.html">Resume</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="active"><a class="pt-trigger" id="m-pt-home" href="#home">Home</a></li>
+                                    <li><a class="pt-trigger"  id="m-pt-resume" href="#resume">Resume</a></li>
+                                    <li><a class="pt-trigger" id="m-pt-services" href="#services">Services</a></li>
+                                    <li><a class="pt-trigger" id="m-pt-blog" href="#blog">Blog</a></li>
+                                    <li><a class="pt-trigger" id="m-pt-contact" href="#contact">Contact</a></li>
                                 </ul>
                         </div>
                 </div>
                 <div class="main-menu">
-                    <ul>
-                        <li class="active"><a id="home" href="index.html">Home</a></li>
-                        <li><a id="resume" href="resume.html">Resume</a></li>
-                        <li><a id="services" href="services.html">Services</a></li>
-                        <li><a id="blog" href="blog.html">Blog</a></li>
-                        <li><a id="contact" href="contact.html">Contact</a></li>
+                    <ul id="nav">
+                        <li class="active"><a class="pt-trigger" id="pt-home" href="#home">Home</a></li>
+                        <li><a class="pt-trigger" id="pt-resume" href="#resume">Resume</a></li>
+                        <li><a class="pt-trigger" id="pt-services" href="#services">Services</a></li>
+                        <li><a class="pt-trigger" id="pt-blog" href="#blog">Blog</a></li>
+                        <li><a class="pt-trigger" id="pt-contact" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="clearfix"></div>          
         </div>
-        <div class="card-container shadow">
-            <div class="home-card-header">
-                <div class="col-left">
-                    <div class="img-wrapper">
-                        <img src="./public/img/photo.png" alt="photo">
-                    </div>
-                </div>
-                <div class="col-right">
-                    <div class="personal-infor">
-                        <h1>Hayden Zhang</h1>
-                        <div class="subtitle">Frontend Developer</div> 
-                        <div class="social-media">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
+        <div id="main" class="site-main">
+            <section id="home" class="pt-page current-page">
+                <div class="card-container shadow">
+                    <div class="home-card-header">
+                        <div class="col-left">
+                            <div class="img-wrapper">
+                                <img src="./public/img/photo.png" alt="photo">
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <div class="personal-infor">
+                                <h1>Hayden Zhang</h1>
+                                <div class="subtitle">Frontend Developer</div> 
+                                <div class="social-media">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>  
+                    <div class="home-card-body">
+                        <div class="outer-wrapper">
+                            <h2>About <span class="set-color">Me</span></h2>
+                            <p>Hello! I’m Hayden. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+                        </div>
+                        <div class="outer-wrapper">
+                            <div id="age" class="row">
+                                <div class="col-1">Age</div>
+                                <div class="col-2"><span>29</span></div>
+                            </div>
+                            <div id="residence" class="row">
+                                <div class="col-1">Residence</div>
+                                <div class="col-2"><span>Australia</span></div> 
+                            </div>
+                            <div id="address" class="row">
+                                <div class="col-1">Address</div>
+                                <div class="col-2"><span>Level 3 / 57 Coronation Drive, Brisbane</span></div> 
+                            </div>
+                            <div id="email" class="row">
+                                <div class="col-1">Email</div>
+                                <div class="col-2"><a href="mailto:zhanghuadong2015@gmail.com">zhanghuadong@gmail.com</a></div> 
+                            </div>
+                            <div id="phone" class="row">
+                                <div class="col-1">Phone</div>
+                                <div class="col-2"><span>040888888</span></div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
-            </div>  
-            <div class="home-card-body">
-                <div class="outer-wrapper">
-                    <h2>About <span class="set-color">Me</span></h2>
-                    <p>Hello! I’m Hayden. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.</p>
+            </section>
+            <section id="resume" class="pt-page">        
+                <div class="card-container shadow">
+                <div class="card-header">
+                <h1>Resume</h1>
                 </div>
-                <div class="outer-wrapper">
-                    <div id="age" class="row">
-                        <div class="col-1">Age</div>
-                        <div class="col-2"><span>29</span></div>
+                <div class="card-body">
+                    <div class="qualification-container">
+                        <div class="outer-wrapper">
+                            <h3>Eduction</h3>
+                            <div class="inner-wrapper">
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Specialization Course</h4>
+                                    <p class="subtitle"> <span class="set-color">2010</span> Apple Inc.</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Specialization Course</h4>
+                                    <p class="subtitle"><span class="set-color">2010</span> Apple Inc.</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Specialization Course</h4>
+                                    <p class="subtitle"><span class="set-color">2010</span> Apple Inc.</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-wrapper">
+                            <h3>Experience</h3>
+                            <div class="inner-wrapper">
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Frontend-developer</h4>
+                                    <p class="subtitle"><span class="set-color"> Jan 2010 - Dec 2011 </span>Apple Inc.</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Web Designer</h4>
+                                    <p class="subtitle"><span class="set-color"> Jan 2010 - Dec 2011 </span>Apple Inc.</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                                <div class="content-container">
+                                    <span class="set-circle"></span>
+                                    <span class="set-line"></span>
+                                    <h4>Graphic Designer</h4>
+                                    <p class="subtitle"><span class="set-color"> Jan 2010 - Dec 2011 </span> Web Agency</p>
+                                    <p class="content">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div id="residence" class="row">
-                        <div class="col-1">Residence</div>
-                        <div class="col-2"><span>Australia</span></div> 
+                    <div class="skill-container">
+                        <div class="outer-wrapper">
+                            <h3>Design <span class="set-color">Skills</span></h3>
+                            <div class="process-bar-container">
+                            <p>Web Design</p>
+                            <div class="process-bar">
+                            <div class="process-bar-inner pct-9"></div>
+                        </div>
+                        </div>
+                        <div class="process-bar-container">
+                            <p>Print Design</p>
+                            <div class="process-bar"><div class="process-bar-inner pct-7"></div></div>
+                        </div>
+                        <div class="process-bar-container">
+                            <p>Graphic Design</p>
+                            <div class="process-bar"><div class="process-bar-inner pct-6"></div></div>
+                        </div>
                     </div>
-                    <div id="address" class="row">
-                        <div class="col-1">Address</div>
-                        <div class="col-2"><span>Level 3 / 57 Coronation Drive, Brisbane</span></div> 
+                    <div class="outer-wrapper">
+                      <h3>Coding <span class="set-color">Skills</span></h3>
+                      <div class="process-bar-container">
+                        <p>HTML5</p>
+                        <div class="process-bar">
+                            <div class="process-bar-inner pct-8"></div>
+                        </div>
+                      </div>
+                      <div class="process-bar-container">
+                        <p>CSS3/LESS/SASS</p>
+                        <div class="process-bar"><div class="process-bar-inner pct-8"></div></div>
+                      </div>
+                      <div class="process-bar-container">
+                        <p>jQuery</p>
+                        <div class="process-bar">
+                          <div class="process-bar-inner pct-6"></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+            </section> 
+            <section id="services" class="pt-page">        
+                <div class="card-container shadow">
+                <div class="card-header"><h1>Services</h1></div>
+                <div class="card-body">
+                    <div class="services-container">
+                      <div class="title"><h2>My <span class="set-color">Services</span> </h2> </div>
+                      <div class="item-container">
+                          <div class="item-img-wrapper"><img src="public/img/web_design_icon.png" alt="web-design"></div>
+                          <h4>Web Design</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                      <div class="item-container">
+                          <div class="item-img-wrapper"><img src="public/img/photography_icon.png" alt="photography"></div>
+                          <h4>Photography</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                      <div class="item-container">
+                          <div class="item-img-wrapper"><img src="public/img/creativity_icon.png" alt="creativity"></div>
+                          <h4>Management</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                      <div class="item-container">
+                          <div class="item-img-wrapper"><img src="public/img/advetising_icon.png" alt="advetising"></div>
+                          <h4>Advetising</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                      </div>
+                      <div class="clearfix"></div>
                     </div>
-                    <div id="email" class="row">
-                        <div class="col-1">Email</div>
-                        <div class="col-2"><a href="mailto:zhanghuadong2015@gmail.com">zhanghuadong@gmail.com</a></div> 
-                    </div>
-                    <div id="phone" class="row">
-                        <div class="col-1">Phone</div>
-                        <div class="col-2"><span>040888888</span></div> 
+                    <div class="logo-container">
+                        <div class="page-title"><h2>Client</h2></div>
+                        <div class="logo"><img src="public/img/client_1.png" alt="logo1"></div>
+                        <div class="logo"><img src="public/img/client_2.png" alt="logo2"></div>
+                        <div class="logo"><img src="public/img/client_1.png" alt="logo3"></div>
+                        <div class="logo"><img src="public/img/client_1.png" alt="logo4"></div>
+                        <div class="logo"><img src="public/img/client_1.png" alt="logo5"></div>
+                        <div class="logo"><img src="public/img/client_1.png" alt="logo6"></div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-            </div>
-      </div>      
+                </div>
+            </section>
+            <section id="blog" class="pt-page">
+                <div class="card-container shadow">
+                        <div class="card-header">
+                          <h1>Blog</h1>
+                        </div>
+                        <div class="card-body">
+                          <div class="outer-wrapper">
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/norway.jpg" alt="norway"></a></div>
+                                <p><a href="">Travel</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/bigstock.png" alt=""></a></div>
+                                <p><a href="">Sports</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/nature.jpg" alt=""></a></div>
+                                <p><a href="">HTML5</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                          </div>  
+                          <div class="outer-wrapper">
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/lights.jpg" alt=""></a></div>
+                                <p><a href="">Travel</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/mountains.jpg" alt=""></a></div>
+                                <p><a href="">javascript</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                              <div class="blog-container">
+                                <div class="blog-img-wrapper"><a href="#"><img src="public/img/forest.jpg" alt=""></a></div>
+                                <p><a href="">jQuery</a></p>
+                                <h4><a href="#">Bootstrap is the Most Popular Framework</a></h4>
+                              </div>
+                          </div> 
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
+            </section>
+            <section id="contact" class="pt-page">
+                <div class="card-container shadow">
+                        <div class="card-header">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="card-body">
+                           <div class="outer-wrapper">
+                                <h2>Get in <span class="set-color">Touch</span> </h2> 
+                                <div id="map" class="map"></div>
+                                <div class="info-container">
+                                    <div class="row-control"><i class="fa fa-map-marker"></i><h5>Brisbane, Australia</h5></div>  
+                                    <div class="row-control"><i class="fa fa-envelope"></i><h5>info@jiangren.com.au</h5></div>
+                                    <div class="row-control"><i class="fa fa-phone"></i><h5>+123 654 78900</h5></div>
+                                    <div class="row-control"><i class="fa fa-space-shuttle"></i><h5>Freelance Available</h5></div>
+                                </div>
+                            </div>
+                          <div class="outer-wrapper">
+                            <h2>Contact <span class="set-color">Form</span> </h2>
+                            <div class="contact-form">
+                               <form action="#">
+                                  <div class="input-group"><i class="fa fa-user"></i><label for="fname">Full Name</label><input type="text" class="input-control" name="fname" required="required"></div>
+                                  <div class="input-group"><i class="fa fa-envelope"></i><label for="email">Email Address</label><input type="email" class="input-control" name="email" required="required"></div>
+                                  <div class="input-group"><i class="fa fa-comment"></i><label for="message">Message for Me</label><textarea class="input-control" name="message" id="message" cols="50" rows="4" required="required"></textarea></div> 
+                               </form>
+                            </div>
+                            <form action="?" method="POST"> 
+                             <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                            </form>
+                             <button class="btn-message">SEND MESSAGE</button>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                    </div>
+            </section>
+        </div>
         <div class="copyright">
             <p>&copy;2017 All Copy rights reserved.Designed by <span class="set-color">Webfolly</span></p>
         </div>
